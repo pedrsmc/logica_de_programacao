@@ -1,40 +1,29 @@
-Algoritmo "nome-pessoas"
-
+Algoritmo "nomes-integrantes"
 Var
-   i, j, x: inteiro
-   nomes: vetor[1..2, 1..1] de caractere
-   idades: vetor[1..2, 1..1] de inteiro
-   pesos: vetor[1..2, 1..1] de real
-   alturas: vetor[1..2, 1..1] de real
-Inicio
-   para i de 1 ate 2 faca
-      escreva(i, "° PESSOA:")
-      escreval()
+   bandas: vetor[1..3, 1..5] de caractere
+   nomesB: vetor[1..3] de caractere
+   i, j: inteiro
 
-      para j de 1 ate 1 faca
-         escreva("Digite o nome: ")
-         leia(nomes[i,j])
-         escreva("Digite a idade: ")
-         leia(idades[i,j])
-         escreva("Digite o peso: ")
-         leia(pesos[i,j])
-         escreva("Digite a altura: ")
-         leia(alturas[i,j])
+
+Inicio
+   para i de 1 ate 3 faca
+      limpatela
+      escreva("Digite o nome da", i, "° banda: ")
+      leia(nomesB[i])
+      escreval()
+      para j de 1 ate 5 faca
+         escreva("Digite o nome do", j, "° integrante da banda: ")
+         leia(bandas[i,j])
       fimpara
    fimpara
 
    limpatela
 
-   para i de 1 ate 2 faca
-      escreva(i, "° PESSOA:")
+   para i de 1 ate 3 faca
+      escreval(nomesB[i],":")
       escreval()
-
-      escreval("Digite o nome: ", nomes[i,j])
-      escreval("Digite a idade: ", idades[i,j])
-
-      para j de 1 ate 1 faca
-         escreval("Peso: ", pesos[i,j])
-         escreval("Altura: ", alturas[i,j])
+      para j de 1 ate 5 faca
+         escreval(bandas[i,j])
       fimpara
       escreval()
    fimpara
