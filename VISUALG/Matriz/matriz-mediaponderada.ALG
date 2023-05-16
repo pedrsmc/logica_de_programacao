@@ -9,16 +9,16 @@ Var
    pesos: vetor[1..3] de real
 
 Inicio
+   //Armazenando o valor dos pesos de cada nota.
+   pesos[1] <- 3
+   pesos[2] <- 3
+   pesos[3] <- 4
+
    //Inicio da matriz.
    para i de 1 ate 3 faca
       limpatela
       soma <- 0
 
-      //Armazenando o valor dos pesos de cada nota.
-      pesos[1] <- 3
-      pesos[2] <- 3
-      pesos[3] <- 4
-      
       //Armazenando o nomes das disciplinas que correspondem as colunas da matriz.
       escreva("Digite o nome da disciplina: ")
       leia(disciplinas[i])
@@ -30,10 +30,10 @@ Inicio
          leia(notas[i,j])
 
          //Soma para verificar a a média ponderada.
-         soma <- (notas[i,1] * pesos[1]) + (notas[i,2] * pesos[2]) + (notas[i,3] * pesos[3])
+         soma <- soma + (notas[i,j] * pesos[j])
       fimpara
       //Guardando os valores da média de cada disciplina em um vetor.
-      medias[i] <- soma / (pesos[1] + pesos[2] + pesos[3])
+      medias[i] <- soma / 10
    fimpara
 
    limpatela
