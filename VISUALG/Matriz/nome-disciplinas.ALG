@@ -15,7 +15,7 @@ Inicio
       escreval()
 
       para j de 1 ate 2 faca
-         escreva("Digite o valor da ", j, "° nota: ")
+         escreva("Digite o valor da ", j, "Â° nota: ")
          leia(notas[i,j])
 
          soma <- soma + notas[i,j]
@@ -32,11 +32,11 @@ Inicio
       escreval()
 
       para j de 1 ate 2 faca
-         escreval(j, "° nota:",notas[i,j])
+         escreval(j, "Â° nota:",notas[i,j])
       fimpara
 
       escreval()
-      escreval(" Média: ", medias[i]:2:1)
+      escreval(" MÃ©dia: ", medias[i]:2:1)
       escreval()
    fimpara
 
