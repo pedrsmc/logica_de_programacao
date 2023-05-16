@@ -1,7 +1,7 @@
 Algoritmo "matriz-pessoas"
 
 Var
-   i, j: inteiro
+   i: inteiro
    nomes: vetor[1..2] de caractere
    idades: vetor[1..2] de inteiro
    medidas: vetor[1..2, 1..2] de real
