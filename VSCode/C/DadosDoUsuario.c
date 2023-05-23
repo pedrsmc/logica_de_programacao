@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main (void) {
     int idade;      // inteiro
     float peso;     // real
     char nome[100]; // 99 caracteres
@@ -10,7 +10,7 @@ int main(void) {
     printf("Idade: ");
     scanf("%d", &idade);
 
-    //system("cls"); <- limpa a tela
+    // system("cls"); <- limpa a tela
 
     printf("Peso: ");
     scanf("%f", &peso);
