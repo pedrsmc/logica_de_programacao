@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(void) {
+int main (void) {
     float n1, n2;
     float media;
 
@@ -15,8 +15,10 @@ int main(void) {
     printf("\nMedia = %.1f\n", media);
 
     if (media >= 7.0) {
-        printf("APROVADO!\n");
+        printf("APROVADO!");
+    } else if (media >= 5.0) {
+        printf("RECUPERACAO!");
     } else {
-        printf("REPROVADO!\n");
+        printf("REPROVADO!");
     }
 }
