@@ -1,1 +1,0 @@
-Caso tente rodar o código como um executável, adicione o comando "system("pause");" na última linha do código (dentro da main).
