@@ -8,13 +8,13 @@
 
 
 int main(void) {
-    float average;
-    int num1, num2, sum, product, bigger, smaller;
+    float average, num1, num2;
+    int sum, product, bigger, smaller;
 
     printf("Digite um numero inteiro: ");
-    scanf("%d", &num1);
+    scanf("%f", &num1);
     printf("Digite um numero inteiro: ");
-    scanf("%d", &num2);
+    scanf("%f", &num2);
 
     if (num1 > num2) {
         bigger = num1;
@@ -28,7 +28,7 @@ int main(void) {
 
     product = num1 * num2;
     sum = num1 + num2;
-    average = sum / 2;
+    average = (num1 + num2) / 2;
 
     printf("Media = %.1f\n", average);
     printf("Soma = %d\n", sum);
