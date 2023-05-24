@@ -10,7 +10,7 @@ int main(void) {
     printf("Digite sua idade: ");
     scanf("%d", &age);
 
-    if ((age < 18) || (age > 65)) {
+    if (age < 18 || age > 65) {
         printf("Voto nao obrigatorio.\n");
     } else {
         printf("Voto obrigatorio!\n");
