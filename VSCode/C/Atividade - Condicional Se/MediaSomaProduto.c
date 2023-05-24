@@ -13,17 +13,15 @@ int main(void) {
 
     printf("Digite um numero inteiro: ");
     scanf("%d", &num1);
-
-    smaller = num1;
-    bigger = num1;
-
     printf("Digite um numero inteiro: ");
     scanf("%d", &num2);
 
-    if (num2 > num1) {
-        bigger = num2;
-    } else {
+    if (num1 > num2) {
+        bigger = num1;
         smaller = num2;
+    } else {
+        bigger = num2;
+        smaller = num1;
     }
 
     system("cls");
