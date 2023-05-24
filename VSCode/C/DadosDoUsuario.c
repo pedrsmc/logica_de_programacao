@@ -24,5 +24,5 @@ int main (void) {
     printf("Sexo: ");
     scanf("%c", &sexo);
 
-    system("pause");
+    system("pause"); // Quando for rodar o código como executável
 }
