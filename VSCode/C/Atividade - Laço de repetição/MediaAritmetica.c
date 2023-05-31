@@ -7,7 +7,7 @@
 
 int main (void) {
     int i;
-    float soma, media, notas[100];
+    float soma, media, notas[sizeof(int)]; //sizeof para vetores com o tamanho indefinido.
     char resposta[4];
 
     do {
@@ -23,7 +23,6 @@ int main (void) {
         printf("\nDeseja digitar mais alguma nota (sim/nao): ");
         gets(resposta);
         printf("..............................................\n\n");
-
     } while (strcmp(resposta, "sim") == 0);
 
     media = soma / i;
