@@ -17,8 +17,7 @@ int main (void) {
             menor = numeros[i];
         } else if (numeros[i] > maior) {
             maior = numeros[i];
-        }
-        
+        }    
     }
 
     printf("\nMaior = %d\n", maior);
