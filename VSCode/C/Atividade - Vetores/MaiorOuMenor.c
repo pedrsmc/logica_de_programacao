@@ -22,5 +22,4 @@ int main (void) {
 
     printf("\nMaior = %d\n", maior);
     printf("Menor = %d\n", menor);
-
 }
