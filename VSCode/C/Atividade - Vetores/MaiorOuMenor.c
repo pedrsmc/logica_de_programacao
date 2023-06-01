@@ -5,9 +5,7 @@
 // Mostre os números informados pelo usuário.
 
 int main (void) {
-    int i ,maior, menor, numeros[5];
-
-    menor = 99999;
+    int i ,maior, menor = INT_MAX, numeros[5];
 
     for (i = 0; i < 5; i++) {
         printf("Digite um numero: ");
