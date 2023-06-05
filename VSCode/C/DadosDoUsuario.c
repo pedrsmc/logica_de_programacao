@@ -18,8 +18,7 @@ int main (void) {
     fflush(stdin); // limpa o buffer do teclado
 
     printf("Nome: ");
-    gets(nome);
-    // scanf("%f", &peso);
+    gets(nome); // Usar para ler strings
 
     printf("Sexo: ");
     scanf("%c", &sexo);
