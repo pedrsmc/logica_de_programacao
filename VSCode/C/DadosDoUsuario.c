@@ -18,10 +18,10 @@ int main (void) {
     fflush(stdin); // limpa o buffer do teclado
 
     printf("Nome: ");
-    gets(nome); // Usar para ler strings
+    gets(nome); // usar para ler strings
 
     printf("Sexo: ");
     scanf("%c", &sexo);
 
-    system("pause"); // Quando for rodar o código como executável
+    system("pause"); // quando for rodar o código como executável
 }
