@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
+// Crie um algoritmo que receba o nome de três disciplinas, receba duas notas  para cada disciplina e mostre o nome da discplina, as notas e a média.
+
 int main(void) {
     int i, j;
     char disciplinas[3][250];

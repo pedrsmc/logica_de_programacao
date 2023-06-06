@@ -2,6 +2,8 @@
 #include <stdlib.h>
 #include <locale.h>
 
+// Crie um algoritmo que receba o três notas de 2 semestres e imprima na tela as três notas de cada semestre.
+
 int main(void) {
     int i, j, semestres[3];
     float notas[2][3];
