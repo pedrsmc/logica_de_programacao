@@ -2,8 +2,7 @@
 #include <stdlib.h>
 #include <locale.h>
 
-int main()
-{
+int main() {
     setlocale(LC_ALL, "");
 
     int codigo, i;
@@ -14,9 +13,9 @@ int main()
 
         printf("100 - Detergente.\n");
         printf("101 - Esponja.\n");
-        printf("102 - L„ de aÁo.\n");
+        printf("102 - L√£ de a√ßo.\n");
 
-        printf("\nDigite o cÛdigo: ");
+        printf("\nDigite o c√≥digo: ");
         scanf("%d", &codigo);
 
         if (codigo != 0) {
@@ -38,7 +37,7 @@ int main()
         printf("\nSaindo...");
             break;
         default:
-            printf("\nDigite um cÛdigo v·lido.\n");
+            printf("\nDigite um c√≥digo v√°lido.\n");
             break;
         }
 
