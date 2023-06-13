@@ -8,11 +8,11 @@ int main () {
     int opcao, n[2], i;
 
     printf("1 - Soma.\n");
-    printf("2 - Subtração.\n");
-    printf("3 - Multiplicação.\n");
-    printf("4 - Divisão.\n\n");
+    printf("2 - SubtraÃ§Ã£o.\n");
+    printf("3 - MultiplicaÃ§Ã£o.\n");
+    printf("4 - DivisÃ£o.\n\n");
 
-    printf("Digite o número referente a operação que deseja realizar: ");
+    printf("Digite o nÃºmero referente a operaÃ§Ã£o que deseja realizar: ");
     scanf("%d", &opcao);
 
     switch (opcao) {
@@ -22,7 +22,7 @@ int main () {
         printf("Soma:\n\n");
 
         for (i = 0; i < 2; i++) {
-            printf("Digite um número: ");
+            printf("Digite um nÃºmero: ");
             scanf("%d", &n[i]);
         }
 
