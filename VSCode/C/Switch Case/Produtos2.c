@@ -11,9 +11,12 @@ int main () {
         i++;
         system("cls");
 
-        printf("100 - Detergente.\n");
-        printf("101 - Esponja.\n");
-        printf("102 - Lã de aço.\n");
+        printf("100 - Cachorro Quente.\n");
+        printf("101 - Bauru Simples.\n");
+        printf("102 - Bauru com ovo.\n");
+        printf("103 - Hambúrguer.\n");
+        printf("104 - Cheeseburguer.\n");
+        printf("105 - Refrigerante.\n");
 
         printf("\nDigite o código: ");
         scanf("%d", &codigo);
@@ -25,17 +28,23 @@ int main () {
 
         switch (codigo) {
         case 100:
-            printf("\nTotal = %.2f\n", 1.59 * i);
+            printf("\nTotal = %.2f\n", 1.70 * i);
             break;
         case 101:
-            printf("\nTotal = %.2f\n", 4.59 * i);
+            printf("\nTotal = %.2f\n", 2.30 * i);
             break;
         case 102:
-            printf("\nTotal = %.2f\n", 1.79 * i);
+            printf("\nTotal = %.2f\n", 2.60 * i);
             break;
-        case 0:
-        printf("\nSaindo...");
+        case 103:
+            printf("\nTotal = %.2f\n", 2.40 * i);
             break;
+        case 104:
+            printf("\nTotal = %.2f\n", 2.50 * i);
+                break;
+        case 105:
+            printf("\nTotal = %.2f\n", 1.00 * i);
+                break;
         default:
             printf("\nDigite um código válido.\n");
             break;
