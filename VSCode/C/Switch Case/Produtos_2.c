@@ -14,11 +14,11 @@ int main () {
         printf("100 - Cachorro Quente.\n");
         printf("101 - Bauru Simples.\n");
         printf("102 - Bauru com ovo.\n");
-        printf("103 - Hambúrguer.\n");
+        printf("103 - HambÃºrguer.\n");
         printf("104 - Cheeseburguer.\n");
         printf("105 - Refrigerante.\n");
 
-        printf("\nDigite o código: ");
+        printf("\nDigite o cÃ³digo: ");
         scanf("%d", &codigo);
 
         if (codigo != 0) {
@@ -46,7 +46,7 @@ int main () {
             printf("\nTotal = %.2f\n", 1.00 * i);
                 break;
         default:
-            printf("\nDigite um código válido.\n");
+            printf("\nDigite um cÃ³digo vÃ¡lido.\n");
             break;
         }
 
