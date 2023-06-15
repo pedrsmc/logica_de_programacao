@@ -2,6 +2,15 @@
 #include <stdlib.h>
 #include <locale.h>
 
+// Crie um programa usando Struct com as informações abaixo:
+// Nome
+// Idade
+// Peso
+// Altura
+// Utilize os dados informados para solicitar estas informações de 5 usuários.
+// Utilize vetor.
+// Mostre os dados do usuário.
+
 struct dados_pessoa {
     char nome[5][250];
     int idade[5];
@@ -18,7 +27,7 @@ int main () {
     for (i = 0; i < 5; i++) {
         system("cls");
 
-        printf("%d� Pessoa:\n\n", i + 1);
+        printf("%dº Pessoa:\n\n", i + 1);
 
         printf("Digite seu nome: ");
         gets(pessoa.nome[i]);
