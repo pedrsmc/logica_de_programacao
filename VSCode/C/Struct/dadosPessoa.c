@@ -3,6 +3,13 @@
 #include <locale.h>
 #include <string.h>
 
+// Crie um programa usando Struct com as informações abaixo:
+// Nome
+// Idade
+// Peso
+// Altura
+// Mostre os dados do usuário.
+
 struct dados_pessoa {
     char nome[250];
     int idade;
@@ -14,7 +21,7 @@ int main () {
 
     struct dados_pessoa pessoa;
 
-    strcpy(pessoa.nome, "Maria"); // Para inserir strings em vari�veis.
+    strcpy(pessoa.nome, "Maria"); // Para inserir strings em variáveis.
     pessoa.idade = 24;
     pessoa.peso = 72.2;
     pessoa.altura = 1.72;
