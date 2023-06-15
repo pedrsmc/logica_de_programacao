@@ -2,6 +2,9 @@
 #include <stdlib.h>
 #include <locale.h>
 
+// Implemente um programa que leia o nome, a idade e o endereço de uma pessoa e armazene os dados em uma estrutura.
+// Mostre os dados do usuário.
+
 struct dados_pessoa {
     char nome[250];
     int idade;
@@ -31,7 +34,7 @@ int main () {
     gets(endereco.bairro);
     printf("Digite a rua: ");
     gets(endereco.rua);
-    printf("Digite o n�mero da casa: ");
+    printf("Digite o número da casa: ");
     scanf("%d", &endereco.num);
     fflush(stdin);
 
