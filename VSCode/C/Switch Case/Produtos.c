@@ -8,7 +8,6 @@ int main () {
     int codigo, i;
 
     do {
-        i++;
         system("cls");
 
         printf("100 - Detergente.\n");
