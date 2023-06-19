@@ -9,18 +9,57 @@
 // Informe a menor media geral;
 // Para cada aluno diga se ele foi aprovado ou reprovado, considerando o valor 6 para aprovação.
 
-struct dados_aluno {
+struct dadosAluno {
     char nome[250];
     int matricula;
     float nota[3], media;
 };
 
+void maioresNotas(struct dadosAluno aluno[]) {
+    int i, j;
+    float maior, menor = __INT_MAX__, maiorProva;
+
+    for (i = 0; i < 5; i++) {
+        if (aluno[i].media < menor) {
+            menor = aluno[i].media;
+        }
+
+        if (aluno[i].media > maior) {
+            maior = aluno[i].media;
+        }
+
+        for (j = 0; j < 3; j++) {
+            if (aluno[i].nota[j] > maiorProva) {
+                maiorProva = aluno[i].nota[j];
+            }
+        }
+    }
+
+    printf("Maior média geral: %.2f\n", maior);
+    printf("Menor média geral: %.2f\n", menor);
+    printf("Maior nota da 1º prova: %.2f", maiorProva);
+}
+
+void mostrarSituacao(struct dadosAluno aluno[]) {
+    int i;
+
+    for (i = 0; i < 5; i++) {
+        if (aluno[i].media >= 6.0) {
+            printf("%s = APROVADO!", aluno[i].nome);
+        } else {
+            printf("%s = REPROVADO!", aluno[i].nome);
+        }
+        
+        printf("\n--------------------------------------------\n");
+    }
+}
+
 int main() {
     setlocale(LC_ALL, "");
 
-    float soma, maior, menor = INT_MAX, maiorProva;
+    float soma;
     int i, j;
-    struct dados_aluno aluno[5];
+    struct dadosAluno aluno[5];
 
 
     for (i = 0; i < 5; i++) {
@@ -49,38 +88,12 @@ int main() {
     system("cls");
 
     printf("================ RESULTADO =================\n");
-    
-    for (i = 0; i < 5; i++) {
-        if (aluno[i].media < menor) {
-            menor = aluno[i].media;
-        } 
 
-        if (aluno[i].media > maior) {
-            maior = aluno[i].media;
-        }
-
-        for (j = 0; j < 3; j++) {
-            if (aluno[i].nota[j] > maiorProva) {
-                maiorProva = aluno[i].nota[j];
-            }
-        }
-    }
-
-    printf("Maior média geral: %.2f\n", maior);
-    printf("Menor média geral: %.2f\n", menor);
-    printf("Maior nota da 1º prova: %.2f", maiorProva);
+    maioresNotas(aluno);
 
     printf("\n============================================\n");
 
-    for (i = 0; i < 5; i++) {
-        if (aluno[i].media >= 6.0) {
-            printf("%s = APROVADO!", aluno[i].nome);
-        } else {
-            printf("%s = REPROVADO!", aluno[i].nome);
-        }
-        
-        printf("\n............................................\n");
-    }
+    mostrarSituacao(aluno);
 
     return 0;
 }
