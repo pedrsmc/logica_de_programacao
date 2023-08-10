@@ -3,6 +3,13 @@ body {
     background: linear-gradient(rgb(253, 146, 182), rgb(253, 228, 232));
 }
 
+/** 
+@font-face {
+    font-family: qualquer_nome;
+    src: url('Font.utf');
+}
+**/
+
 #logo {
     width: 30%;
     display: block;
@@ -25,9 +32,8 @@ div {
 }
 
 p {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: bold;
-    text-align: justify;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
     width: 79%;
     display: block;
     margin: auto;
